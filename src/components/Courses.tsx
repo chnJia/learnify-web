@@ -18,7 +18,7 @@ const Course: React.FC<CourseProps> = ({ image, title, teacher, rating, price })
     return (
         <div className="flex-shrink-0 w-1/3 flex flex-col items-start text-left bg-soft-blue rounded-lg">
             <img
-            className="w-full h-48 object-cover mb-3 rounded-t-lg"
+            className="w-full object-contain h-48 object-cover mb-3 rounded-t-lg"
             src={image}
             alt={`${title} banner`}
             />
