@@ -174,6 +174,11 @@ const Home = () => {
                 />
             </h1>
 
+            <div className="mt-7 flex flex-col bg-light-blue px-3 pt-2 pb-3 rounded-lg">
+                <h1 className="text-moderate-blue font-bold text-lg">Upcoming Schedule</h1>
+                <p className="mt-2 text-gray-700 text-sm">There's no upcoming schedule for now.</p>
+            </div>
+
             <div className="mt-5 bg-light-blue py-2 px-2 relative">
                 <h2 className="text-zinc-800 font-bold text-lg mb-1">Courses</h2>
                 <div 

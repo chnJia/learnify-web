@@ -36,12 +36,12 @@ const Course: React.FC<CourseProps> = ({ id, image, title, teacher, rating, pric
                 alt={`${title} banner`}
             />
 
-            <div className="text-zinc-800 font-semibold text-sm space-y-1 px-1 pb-1">
+            <div className="text-zinc-800 font-semibold text-sm space-y-1 px-2 pb-1">
                 <h1 className="text-sm">{title}</h1>
                 <p className="text-gray-500 font-medium text-xs">{teacher}</p>
             </div>
 
-            <div className="flex flex-col items-start space-y-1 px-1 pb-2">
+            <div className="flex flex-col items-start space-y-1 px-2 pb-2">
                 <div className="flex items-center space-x-1 text-yellow-500">
                     <span className="text-zinc-800 font-medium text-xs">{rating.toFixed(1)}</span>
 
