@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import SideMenu from './components/SideMenu';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import CourseDetailPage from './pages/CourseDetailPage';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <div className="content flex-1 pt-5"> 
           <Routes>
             <Route path="/" element={<Home />} />
+            <Route path="/course/:courseId" element={<CourseDetailPage />} />
           </Routes>
         </div>
       </div>

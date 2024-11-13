@@ -15,6 +15,9 @@ module.exports = {
       height: {
         '18': '4.5rem',
        },
+       fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
     },
   },
   plugins: [],
