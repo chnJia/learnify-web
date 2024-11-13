@@ -92,13 +92,13 @@ const Home = () => {
 
     const scrollRight = (containerRef: React.RefObject<HTMLDivElement>) => {
         if (containerRef.current) {
-            containerRef.current.scrollBy({ left: 500, behavior: "smooth" });
+            containerRef.current.scrollBy({ left: 300, behavior: "smooth" });
         }
     };
 
     const scrollLeft = (containerRef: React.RefObject<HTMLDivElement>) => {
         if (containerRef.current) {
-            containerRef.current.scrollBy({ left: -500, behavior: "smooth" });
+            containerRef.current.scrollBy({ left: -300, behavior: "smooth" });
         }
     };
 
@@ -125,8 +125,8 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="flex flex-col px-5">
-            <h1 className="text-zinc-800 font-medium text-2xl">
+        <div className="flex flex-col px-4">
+            <h1 className="text-zinc-800 font-medium text-xl">
                 <Typewriter
                     onInit={(typewriter) => {
                         typewriter
@@ -136,11 +136,11 @@ const Home = () => {
                 />
             </h1>
 
-            <div className="mt-7 bg-light-blue py-3 px-3 relative">
-                <h2 className="text-zinc-800 font-bold text-xl mb-2">Our Courses</h2>
+            <div className="mt-5 bg-light-blue py-2 px-2 relative">
+                <h2 className="text-zinc-800 font-bold text-lg mb-1">Our Courses</h2>
                 <div 
                     ref={courseContainerRef} 
-                    className="bg-white border rounded-lg overflow-x-auto no-scrollbar whitespace-nowrap flex space-x-5 py-5 px-3"
+                    className="bg-white border rounded-lg overflow-x-auto no-scrollbar whitespace-nowrap flex space-x-4 py-4 px-2"
                 >
                     {courses.map((course, index) => (
                         <Course
@@ -156,26 +156,26 @@ const Home = () => {
 
                 {isScrolledToLeft && (
                     <button
-                        className="absolute top-1/2 left-0 transform -translate-y-1/3 bg-zinc-800 text-zinc-200 p-3 rounded-full"
+                        className="absolute top-1/2 left-0 transform -translate-y-1/3 bg-zinc-800 text-zinc-200 p-2 rounded-full"
                         onClick={() => scrollLeft(courseContainerRef)}
                     >
-                        <FaAngleLeft className="text-2xl" />
+                        <FaAngleLeft className="text-xl" />
                     </button>
                 )}
 
                 <button
-                    className="absolute top-1/2 right-0 transform -translate-y-1/3 bg-zinc-800 text-zinc-200 p-3 rounded-full"
+                    className="absolute top-1/2 right-0 transform -translate-y-1/3 bg-zinc-800 text-zinc-200 p-2 rounded-full"
                     onClick={() => scrollRight(courseContainerRef)}
                 >
-                    <FaAngleRight className="text-2xl font-light" />
+                    <FaAngleRight className="text-xl font-light" />
                 </button>
             </div>
 
-            <div className="mt-7 bg-light-blue py-3 px-3 relative">
-                <h2 className="text-zinc-800 font-bold text-xl mb-2">Popular Courses</h2>
+            <div className="mt-5 bg-light-blue py-2 px-2 relative">
+                <h2 className="text-zinc-800 font-bold text-lg mb-1">Popular Courses</h2>
                 <div 
                     ref={popularCourseContainerRef} 
-                    className="bg-white border rounded-lg overflow-x-auto no-scrollbar whitespace-nowrap flex space-x-5 py-5 px-3"
+                    className="bg-white border rounded-lg overflow-x-auto no-scrollbar whitespace-nowrap flex space-x-4 py-4 px-2"
                 >
                     {popularCourses.map((course, index) => (
                         <Course
@@ -191,18 +191,18 @@ const Home = () => {
 
                 {isScrolledToLeftPopular && (
                     <button
-                        className="absolute top-1/2 left-0 transform -translate-y-1/3 bg-zinc-800 text-zinc-200 p-3 rounded-full"
+                        className="absolute top-1/2 left-0 transform -translate-y-1/3 bg-zinc-800 text-zinc-200 p-2 rounded-full"
                         onClick={() => scrollLeft(popularCourseContainerRef)}
                     >
-                        <FaAngleLeft className="text-2xl" />
+                        <FaAngleLeft className="text-xl" />
                     </button>
                 )}
 
                 <button
-                    className="absolute top-1/2 right-0 transform -translate-y-1/3 bg-zinc-800 text-zinc-200 p-3 rounded-full"
+                    className="absolute top-1/2 right-0 transform -translate-y-1/3 bg-zinc-800 text-zinc-200 p-2 rounded-full"
                     onClick={() => scrollRight(popularCourseContainerRef)}
                 >
-                    <FaAngleRight className="text-2xl font-light" />
+                    <FaAngleRight className="text-xl font-light" />
                 </button>
             </div>
         </div>
