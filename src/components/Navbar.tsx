@@ -7,7 +7,10 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="w-full bg-dark-blue flex flex-row justify-between py-2 px-6 items-center">
-      <img src={logo} className='w-10 cursor-pointer' alt="Logo" />
+       <div className="flex items-center">
+        <img src={logo} className='w-10 cursor-pointer' alt="Logo" />
+        <span className="text-white font-medium text-md ml-2">Learnify</span>
+      </div>
 
       <div className="flex w-2/5 mx-4 relative">
         <input
