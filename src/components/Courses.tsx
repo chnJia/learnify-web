@@ -23,22 +23,22 @@ const Course: React.FC<CourseProps> = ({ image, title, teacher, rating, price })
             alt={`${title} banner`}
             />
 
-            <div className="text-zinc-800 font-bold text-xl space-y-1 px-2 pb-1">
+            <div className="text-zinc-800 font-bold text-lg space-y-1 px-2 pb-1">
                 <h1>{title}</h1>
-                <p className="text-gray-500 font-medium text-base">{teacher}</p>
+                <p className="text-gray-500 font-medium text-sm">{teacher}</p>
             </div>
 
             <div className="flex flex-col items-start space-y-1 px-2 pb-2">
                 <div className="flex items-center space-x-2 text-yellow-500">
-                    <span className="text-zinc-800 font-medium text-base">{rating.toFixed(1)}</span>
+                    <span className="text-zinc-800 font-medium text-sm">{rating.toFixed(1)}</span>
 
-                    {Array(fullStars).fill(<FaStar className="text-xl" />)}
-                    {halfStar > 0 && <FaStarHalfAlt className="text-xl" />}
-                    {Array(emptyStars).fill(<FaRegStar className="text-xl" />)}
+                    {Array(fullStars).fill(<FaStar className="text-lg" />)}
+                    {halfStar > 0 && <FaStarHalfAlt className="text-lg" />}
+                    {Array(emptyStars).fill(<FaRegStar className="text-lg" />)}
                 </div>
 
                 <div className="flex items-center space-x-2">
-                    <span className="text-lg font-bold text-zinc-800">
+                    <span className="text-md font-bold text-zinc-800">
                         IDR {formattedPrice}
                     </span>
                 </div>
