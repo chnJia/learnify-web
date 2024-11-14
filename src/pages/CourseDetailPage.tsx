@@ -37,13 +37,26 @@ const courses: Course[] = [
         rating: 4.5,
         price: 480000,
         lessons: [
-            { session: "Session 1", topic: "Introduction to React", description: "An introduction to the React library and its core concepts." },
-            { session: "Session 2", topic: "Components and Props", description: "Learn about creating reusable components and managing props." },
-            { session: "Session 3", topic: "State and Lifecycle", description: "Understand how to manage state and the component lifecycle in React." },
+            { 
+                session: "Session 1", 
+                topic: "Introduction to React", 
+                description: "An introduction to the React library and its core concepts." 
+            },
+            { 
+                session: "Session 2", 
+                topic: "Components and Props", 
+                description: "Learn about creating reusable components and managing props." 
+            },
+            { 
+                session: "Session 3", 
+                topic: "State and Lifecycle", 
+                description: "Understand how to manage state and the component lifecycle in React." 
+            },
         ],
         reviews: [
-            { name: "John Doe", comment: "Excellent course!", rating: 5 },
-            { name: "Jane Smith", comment: "Very informative!", rating: 4 },
+            { name: "Elena", comment: "Excellent course!", rating: 5 },
+            { name: "Marvella", comment: "Very informative!", rating: 4 },
+            { name: "Sergio", comment: "Very informative!", rating: 4 },
         ]
     },
    
@@ -84,7 +97,7 @@ const CourseDetail = () => {
 
                 <div className="w-1/2 pl-4">
                     <h2 className="text-zinc-800 font-bold text-xl mb-2">{course.title}</h2>
-                    <p className="text-zinc-600 mb-4">{course.description}</p>
+                    <p className="text-zinc-600 mb-4 text-sm">{course.description}</p>
 
                     <div className="flex items-center text-sm text-zinc-500">
                         <span className="font-semibold">Teacher:</span>
@@ -102,7 +115,7 @@ const CourseDetail = () => {
                     </div>
 
                     <div className="flex items-center space-x-1 mt-4">
-                        <span className="text-sm font-bold text-zinc-800">
+                        <span className="text-md font-bold text-zinc-800">
                             IDR {formattedPrice}
                         </span>
                     </div>
@@ -135,7 +148,7 @@ const CourseDetail = () => {
                             <ul className="space-y-4">
                                 {course.lessons.map((lesson: Lesson, index: number) => (
                                     <li key={index} className="p-4 border rounded-lg bg-gray-50 hover:bg-gray-100 transition">
-                                        <h5 className="text-lg font-semibold text-blue-600">{lesson.session}: {lesson.topic}</h5>
+                                        <h5 className="text-lg font-semibold text-azure">{lesson.session}: {lesson.topic}</h5>
                                         <p className="text-gray-600 mt-2">{lesson.description}</p>
                                     </li>
                                 ))}
@@ -164,32 +177,7 @@ const CourseDetail = () => {
                                         </div>
 
                                         <p className="text-gray-600 mt-2 line-clamp-4">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae nibh nisi. Praesent in orci ligula. Nulla facilisi. Aenean ac libero et nulla interdum pellentesque. Integer vel lacus mauris. Ut non felis eget justo elementum volutpat.
-                                        </p>
-                                    </li>
-                                ))}
-                            </ul>
-
-                            <ul className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-2">
-                                {course.reviews.map((review: Review, index: number) => (
-                                    <li key={index} className="p-4 border rounded-lg bg-gray-50 hover:bg-gray-100 transition">
-                                        <div className="flex items-center mb-2">
-                                            <FaUserCircle className="text-3xl text-gray-500 mr-3" />
-                                            <div className="flex flex-col">
-                                                <span className="font-semibold text-lg text-zinc-800">{review.name}</span>
-
-                                                <div className="flex items-center text-yellow-500">
-                                                    {Array(Math.floor(review.rating)).fill(<FaStar />)}
-                                                    {review.rating % 1 !== 0 && <FaStarHalfAlt />}
-                                                    {Array(5 - Math.ceil(review.rating)).fill(<FaRegStar />)}
-
-                                                    <span className="ml-2 text-xs text-gray-500">2h ago</span>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <p className="text-gray-600 mt-2 line-clamp-4">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae nibh nisi. Praesent in orci ligula. Nulla facilisi. Aenean ac libero et nulla interdum pellentesque. Integer vel lacus mauris. Ut non felis eget justo elementum volutpat.
+                                            {review.comment}
                                         </p>
                                     </li>
                                 ))}

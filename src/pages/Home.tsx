@@ -1,7 +1,8 @@
 import { useRef, useEffect, useState } from "react";
 import Typewriter from 'typewriter-effect';
 import Course from "../components/Courses";
-import { FaAngleRight, FaAngleLeft } from "react-icons/fa6";
+import { FaAngleRight, FaAngleLeft, FaBookOpen, FaLocationArrow } from "react-icons/fa6";
+import { FaSearch } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
@@ -164,15 +165,17 @@ const Home = () => {
 
     return (
         <div className="flex flex-col px-4">
-            <h1 className="text-zinc-800 font-medium text-xl">
-                <Typewriter
-                    onInit={(typewriter) => {
-                        typewriter
-                            .typeString('Hello! Welcome to Learnify')
-                            .start();   
-                    }}
-                />
-            </h1>
+            <div className="text-right">
+                <h1 className="text-zinc-800 font-medium text-xl">
+                    <Typewriter
+                        onInit={(typewriter) => {
+                            typewriter
+                                .typeString('Hello! Welcome to Learnify')
+                                .start();   
+                        }}
+                    />
+                </h1>
+            </div>
 
             <div className="mt-7 flex flex-col bg-light-blue px-3 pt-2 pb-3 rounded-lg">
                 <h1 className="text-moderate-blue font-bold text-lg">Upcoming Schedule</h1>
@@ -256,6 +259,82 @@ const Home = () => {
                     <FaAngleRight className="text-xl font-light" />
                 </button>
             </div>
+
+            <section className="mt-10 px-4">
+                <div className="text-center mb-10 relative px-4 md:px-10 relative max-w-4xl mx-auto">
+                    <h2 className="text-2xl font-semibold text-center mb-4 text-zinc-800">About Learnify</h2>
+                    <p className="text-center text-gray-600 text-sm mx-auto px-4 py-6 bg-white rounded-lg shadow-md border border-gray-100">
+                        Learnify is dedicated to providing high-quality, accessible education to students around the world. 
+                        Our platform offers a wide range of courses designed to help you reach your learning goals, whether 
+                        you're just starting out or looking to advance your career. Join us to explore topics taught by industry experts.
+                    </p>
+                </div>
+
+                <h2 className="text-3xl font-semibold text-center mb-6 text-zinc-800">How It Works</h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div className="flex flex-col items-center">
+                        <span className="bg-light-blue text-zinc-800 p-4 rounded-full mb-3">
+                            <FaSearch className="text-2xl" /> 
+                        </span>
+                        <h3 className="text-xl font-bold text-zinc-700">Browse Courses</h3>
+                        <p className="text-sm text-gray-500 mt-2">
+                            Explore a wide range of topics and find the ideal course for your needs and interests.
+                        </p>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <span className="bg-light-blue text-zinc-800 p-4 rounded-full mb-3">
+                            <FaBookOpen className="text-2xl" /> 
+                        </span>
+                        <h3 className="text-xl font-bold text-zinc-700">Enroll and Learn</h3>
+                        <p className="text-sm text-gray-500 mt-2">
+                            Sign up, enroll in your favorite courses, and learn at your own pace.
+                        </p>
+                    </div>
+                    <div className="flex flex-col items-center">
+                        <span className="bg-light-blue text-zinc-800 p-4 rounded-full mb-3">
+                            <FaLocationArrow className="text-2xl" />  
+                        </span>
+                        <h3 className="text-xl font-bold text-zinc-700">Onsite or Online Learning</h3>
+                        <p className="text-sm text-gray-500 mt-2">
+                            Choose between learning at your own pace online or having a teacher come to your location for an onsite experience.
+                        </p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section className="mt-14 px-4">
+                <h2 className="text-3xl font-semibold text-center mb-8 text-zinc-800">Membership Levels</h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <div className="bg-white rounded-lg shadow-lg p-6 border">
+                        <h3 className="text-xl font-bold text-zinc-700 mb-3">Basic Membership</h3>
+                        <p className="text-sm text-gray-500">Access a selection of free courses and some exclusive content.</p>
+                        <p className="text-sm font-semibold text-zinc-800 mt-4">Free</p>
+                    </div>
+                    <div className="bg-white rounded-lg shadow-lg p-6 border">
+                        <h3 className="text-xl font-bold text-zinc-700 mb-3">Premium Membership</h3>
+                        <p className="text-sm text-gray-500">Enjoy access to all courses, special projects, and resources.</p>
+                        <p className="text-sm font-semibold text-zinc-800 mt-4">$20/month</p>
+                    </div>
+                    <div className="bg-white rounded-lg shadow-lg p-6 border">
+                        <h3 className="text-xl font-bold text-zinc-700 mb-3">Pro Membership</h3>
+                        <p className="text-sm text-gray-500">Get complete access to courses, mentorship, and advanced certifications.</p>
+                        <p className="text-sm font-semibold text-zinc-800 mt-4">$50/month</p>
+                    </div>
+                </div>
+            </section>
+
+            <section className="mt-14 px-4">
+                <div className="bg-gradient-to-r from-dark-blue via-dark-moderate-blue to-dark-blue rounded-lg shadow-lg p-8 text-center text-white">
+                    <h2 className="text-3xl font-semibold mb-4">Apply as a Teacher</h2>
+                    <p className="text-sm mb-6">
+                        Share your expertise with our learners. Join as a teacher and help students achieve their goals. Applicants will go through a brief test and an interview to ensure quality teaching standards.
+                    </p>
+                    <button className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-full hover:bg-blue-100 transition duration-300">
+                        Apply Now
+                    </button>
+                </div>
+            </section>
         </div>
     );
 }
