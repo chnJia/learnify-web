@@ -3,7 +3,6 @@ import Typewriter from 'typewriter-effect';
 import Course from "../components/Courses";
 import { FaAngleRight, FaAngleLeft, FaBookOpen, FaLocationArrow } from "react-icons/fa6";
 import { FaSearch } from "react-icons/fa";
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
@@ -19,7 +18,7 @@ const Home = () => {
         },
         { 
             id: 2,
-            image: "assets/AlgebraMath.jpeg", 
+            image: "assets/Algebra-course.jpg", 
             title: "Mastering Algebra", 
             teacher: "Janneth Christopher", 
             rating: 4.7, 
@@ -122,7 +121,6 @@ const Home = () => {
         console.log('Popular course clicked:', courseId);
         
     };
-
 
     const courseContainerRef = useRef<HTMLDivElement>(null);
     const popularCourseContainerRef = useRef<HTMLDivElement>(null);
@@ -330,7 +328,7 @@ const Home = () => {
                     <p className="text-sm mb-6">
                         Share your expertise with our learners. Join as a teacher and help students achieve their goals. Applicants will go through a brief test and an interview to ensure quality teaching standards.
                     </p>
-                    <button className="bg-white text-blue-700 font-semibold px-6 py-3 rounded-full hover:bg-blue-100 transition duration-300">
+                    <button className="bg-white text-azure font-semibold px-6 py-3 rounded-full hover:bg-light-blue transition duration-300">
                         Apply Now
                     </button>
                 </div>

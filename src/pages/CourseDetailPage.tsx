@@ -52,6 +52,26 @@ const courses: Course[] = [
                 topic: "State and Lifecycle", 
                 description: "Understand how to manage state and the component lifecycle in React." 
             },
+            { 
+                session: "Session 4", 
+                topic: "Handling Events", 
+                description: "Learn how to handle user interactions and events in React." 
+            },
+            { 
+                session: "Session 5", 
+                topic: "React Router Basics", 
+                description: "An introduction to routing in React and creating multi-page applications." 
+            },
+            { 
+                session: "Session 6", 
+                topic: "Hooks: useState and useEffect", 
+                description: "Understand React Hooks for managing state and side effects in functional components." 
+            },
+            { 
+                session: "Session 7", 
+                topic: "Custom Hooks", 
+                description: "Learn how to build reusable logic by creating custom hooks in React." 
+            },
         ],
         reviews: [
             { name: "Elena", comment: "Excellent course!", rating: 5 },
@@ -59,7 +79,156 @@ const courses: Course[] = [
             { name: "Sergio", comment: "Very informative!", rating: 4 },
         ]
     },
-   
+    {
+        id: 2,
+        image: "/assets/Algebra-course.jpg",
+        title: "Mastering Algebra",
+        description: "A comprehensive guide to Algebra designed for senior high school students, covering foundational to advanced topics to build strong mathematical skills.",
+        teacher: "Janneth Christoper",
+        rating: 4.7,
+        price: 320000,
+        lessons: [
+            {
+                session: "Session 1",
+                topic: "Introduction to Algebra",
+                description: "Understand the basics of algebra, including variables, constants, and operations.",
+            },
+            {
+                session: "Session 2",
+                topic: "Linear Equations and Inequalities",
+                description: "Learn how to solve linear equations and graph inequalities on a number line.",
+            },
+            {
+                session: "Session 3",
+                topic: "Polynomials and Factoring",
+                description: "Explore polynomial expressions, their degrees, and methods for factoring.",
+            },
+            {
+                session: "Session 4",
+                topic: "Quadratic Equations",
+                description: "Learn to solve quadratic equations using factoring, completing the square, and the quadratic formula.",
+            },
+            {
+                session: "Session 5",
+                topic: "Functions and Graphs",
+                description: "Understand the concept of a function and how to represent it graphically.",
+            },
+            {
+                session: "Session 6",
+                topic: "Exponents and Radicals",
+                description: "Master the rules of exponents and the simplification of radical expressions.",
+            },
+            {
+                session: "Session 7",
+                topic: "Systems of Equations",
+                description: "Learn methods to solve systems of equations, including substitution and elimination.",
+            },
+        ],
+        reviews: [
+            { name: "John", comment: "Great course!", rating: 4 },
+            { name: "Sarah", comment: "Good overview of Angular.", rating: 5 },
+        ]
+    },
+    {
+        id: 3,
+        image: "/assets/Biology.jpg",
+        title: "Biology for Senior High 1",
+        description: "An in-depth course designed for senior high school students, covering key biological concepts, from cell biology to ecosystems, to build a solid foundation in the study of life sciences.",
+        teacher: "Dian Indrajani",
+        rating: 4.0,
+        price: 299000,
+        lessons: [
+            {
+                session: "Session 1",
+                topic: "Introduction to Biology",
+                description: "Explore the basics of biology, including the scientific method, cell structure, and the role of DNA in inheritance."
+            },
+            {
+                session: "Session 2",
+                topic: "Cell Biology",
+                description: "Understand the structure and function of cells, cell division, and the different types of cells found in living organisms."
+            },
+            {
+                session: "Session 3",
+                topic: "Genetics and Heredity",
+                description: "Learn the principles of genetics, inheritance patterns, and how traits are passed from one generation to the next."
+            },
+            {
+                session: "Session 4",
+                topic: "Human Anatomy and Physiology",
+                description: "Study the structure and functions of the human body, focusing on major systems such as the circulatory, respiratory, and nervous systems."
+            },
+            {
+                session: "Session 5",
+                topic: "Ecology and Ecosystems",
+                description: "Understand the interactions between organisms and their environment, including food chains, energy flow, and ecological succession."
+            },
+            {
+                session: "Session 6",
+                topic: "Evolution and Natural Selection",
+                description: "Learn about the theory of evolution, natural selection, and the evidence supporting the evolution of species over time."
+            },
+            {
+                session: "Session 7",
+                topic: "Microorganisms and Diseases",
+                description: "Explore the world of microorganisms, their role in ecosystems, and their impact on human health through diseases and infections."
+            },
+        ],
+        reviews: [
+            { name: "John", comment: "Great course!", rating: 4 },
+            { name: "Sarah", comment: "Good overview of Angular.", rating: 5 },
+        ]
+    },
+    {
+        id: 4,
+        image: "/assets/Python.jpg",
+        title: "Python for Beginner",
+        description: "An introductory course designed for senior high school students, covering the fundamentals of Python programming. Students will learn basic concepts such as variables, data types, and control structures to build a foundation for coding and problem-solving in Python.",
+        teacher: "Belinda Wati",
+        rating: 4.3,
+        price: 280000,
+        lessons: [
+            {
+                session: "Session 1",
+                topic: "Introduction to Python",
+                description: "Get started with Python programming by learning about the basic syntax, variables, and how to run Python programs."
+            },
+            {
+                session: "Session 2",
+                topic: "Data Types and Variables",
+                description: "Understand the different data types in Python (strings, integers, floats, booleans) and how to use variables to store information."
+            },
+            {
+                session: "Session 3",
+                topic: "Control Structures: If, Else, Elif",
+                description: "Learn how to control the flow of your program with conditional statements like if, else, and elif."
+            },
+            {
+                session: "Session 4",
+                topic: "Loops: For and While",
+                description: "Explore how to repeat actions using loops, and learn when to use for loops and while loops."
+            },
+            {
+                session: "Session 5",
+                topic: "Functions and Modular Programming",
+                description: "Learn how to create and use functions to organize code and make it reusable and modular."
+            },
+            {
+                session: "Session 6",
+                topic: "Lists and Dictionaries",
+                description: "Master the use of lists and dictionaries in Python to store collections of data and access them efficiently."
+            },
+            {
+                session: "Session 7",
+                topic: "Error Handling and Debugging",
+                description: "Understand how to handle errors in your Python programs and use debugging tools to fix common problems."
+            },
+        ],
+        reviews: [
+            { name: "John", comment: "Great course!", rating: 4 },
+            { name: "Sarah", comment: "Good overview of Angular.", rating: 5 },
+        ]
+    },
 ];
 
 const CourseDetail = () => {
@@ -91,7 +260,7 @@ const CourseDetail = () => {
                     <img
                         src={course.image}
                         alt={course.title}
-                        className="w-full h-auto object-cover rounded-lg"
+                        className="w-full h-52 object-cover rounded-lg"
                     />
                 </div>
 
