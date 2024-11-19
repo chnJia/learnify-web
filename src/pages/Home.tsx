@@ -45,8 +45,8 @@ const Home = () => {
         },
         { 
             id: 5,
-            image: "assets/Python.jpg", 
-            title: "Python for Beginner", 
+            image: "assets/IELTS-course.jpg", 
+            title: "IELTS Full Prep Course by the 9.0 Examinee", 
             teacher: "Belinda Wati", 
             rating: 4.3, 
             price: 280000,
@@ -54,8 +54,8 @@ const Home = () => {
         },
         { 
             id: 6,
-            image: "assets/Python.jpg", 
-            title: "Python for Beginner", 
+            image: "assets/Algorithm-C++.jpg", 
+            title: "Mastering Algorithm in C++", 
             teacher: "Belinda Wati", 
             rating: 4.3, 
             price: 280000,

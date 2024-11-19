@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import CourseDetailPage from './pages/CourseDetailPage';
+import TeacherListPage from './pages/TeacherListPage';
+import BookingPage from './pages/BookingPage';
 
 function App() {
   return (
@@ -11,8 +13,10 @@ function App() {
       <Navbar />
         <div className='mt-5 px-5 pb-7'> 
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/course/:courseId" element={<CourseDetailPage />} />
+            <Route path='/' element={<Home />} />
+            <Route path='/course/:courseId' element={<CourseDetailPage />} />
+            <Route path='/teachers' element={<TeacherListPage />} />
+            <Route path='/booking-form' element={<BookingPage />} />
           </Routes>
         </div>
      
