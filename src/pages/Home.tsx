@@ -254,7 +254,7 @@ const Home = () => {
                 </button>
             </div>
 
-            <div className="mt-8 bg-light-blue py-2 px-2 relative">
+            <div className="mt-5 bg-light-blue py-2 px-2 relative">
                 <h2 className="text-zinc-800 font-bold text-sm sm:text-lg mb-2">Popular Courses</h2>
                 <div
                     ref={popularCourseContainerRef}
