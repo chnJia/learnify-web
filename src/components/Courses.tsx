@@ -17,8 +17,6 @@ const Course: React.FC<CourseProps> = ({ id, image, title, teacher, rating, pric
     const halfStar = rating % 1 !== 0 ? 1 : 0; 
     const emptyStars = 5 - fullStars - halfStar; 
 
-    const formattedPrice = new Intl.NumberFormat('id-ID').format(price);
-
     return (
         <div 
             className="flex-shrink-0 w-1/4 flex flex-col items-start text-left bg-soft-blue rounded-lg cursor-pointer"
@@ -52,7 +50,7 @@ const Course: React.FC<CourseProps> = ({ id, image, title, teacher, rating, pric
 
                 <div className="flex items-center space-x-1">
                     <span className="text-sm font-bold text-zinc-800">
-                        IDR {formattedPrice}
+                        IDR {new Intl.NumberFormat().format(price)}
                     </span>
                 </div>
             </div>

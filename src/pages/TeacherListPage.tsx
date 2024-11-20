@@ -133,8 +133,8 @@ const TeacherList: React.FC = () => {
   const selectedTeacher = teachers.find(teacher => teacher.id === selectedTeacherId);
 
   return (
-    <div className="mx-auto px-4 py-8">
-      <h1 className="text-3xl font-extrabold text-gray-800 mb-6 text-center">Teacher List</h1>
+    <div className="mx-auto px-4 pb-8 pt-3">
+      <h1 className="text-3xl font-extrabold text-gray-800 mb-6 text-center">Select a Course Type</h1>
         <div className="mb-8 flex justify-center space-x-6">
             <button
                 className={`px-12 py-2 ${
