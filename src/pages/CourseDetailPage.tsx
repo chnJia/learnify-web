@@ -366,7 +366,7 @@ const CourseDetail = () => {
                     />
                 </div>
 
-                <div className="w-full md:w-1/2 pl-4">
+                <div className="w-full md:w-1/2 pl-2">
                     <h2 className="text-zinc-800 font-bold text-base sm:text-lg md:text-xl mb-2">{course.title}</h2>
                     <p className="text-zinc-600 mb-4 text-xs sm:text-sm md:text-base">{course.description}</p>
 

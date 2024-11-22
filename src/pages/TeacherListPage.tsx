@@ -41,7 +41,7 @@ const teachers: Teacher[] = [
   {
     id: 2,
     name: 'Jane Winata',
-    profileImage: '/assets/teachers/jane-winata.jpg',
+    profileImage: '/assets/teachers/jane.winata.jpg',
     rating: 4.6,
     location: 'Setiabudi, South Jakarta',
     onlineSchedule: [

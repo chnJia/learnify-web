@@ -93,26 +93,31 @@ const Home = () => {
         },
         { 
             id: 4,
-            image: "assets/Python-DataScience.jpg", 
-            title: "Python for Data Science", 
+            image: "assets/Python-linearRegressionjpg.jpg", 
+            title: "Advanced Linear Regression in Python", 
             teacher: "Belinda Wati", 
-            rating: 4.3, 
-            price: 348000,
+            rating: 4.7, 
+            price: 459000,
             isPopular: true   
         },
         { 
             id: 5,
-            image: "assets/Python-DataScience.jpg", 
-            title: "Python for Data Science", 
+            image: "assets/react-logo.png", 
+            title: "Mastering Reactjs in 3 Weeks", 
             teacher: "Belinda Wati", 
-            rating: 4.3, 
-            price: 348000,
+            rating: 4.2, 
+            price: 289000,
             isPopular: true   
         },
     ];
 
     const location = useLocation();
     const upcomingSchedule = location.state || null;
+
+    const navigateToCoursePage = (courseId: number) => {
+        window.location.href = `/online-course/${courseId}`;
+    };
+    
 
     const navigate = useNavigate();
 

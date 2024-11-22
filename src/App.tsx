@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import CourseDetailPage from './pages/CourseDetailPage';
 import TeacherListPage from './pages/TeacherListPage';
 import BookingPage from './pages/BookingPage';
+import OnlineCoursePage from './pages/OnlineCoursePage';
 
 function ScrollToTop() {
   const location = useLocation();
@@ -31,6 +32,7 @@ function App() {
           <Route path='/course/:courseId' element={<CourseDetailPage />} />
           <Route path='/teachers' element={<TeacherListPage />} />
           <Route path='/booking-form' element={<BookingPage />} />
+          {/* <Route path="/online-course/:courseId" element={<OnlineCoursePage />} /> */}
         </Routes>
       </div>
       <Footer />
